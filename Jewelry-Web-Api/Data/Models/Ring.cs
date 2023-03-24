@@ -12,8 +12,7 @@ namespace Jewelry_Web_Api.Data.Models
 
         public string? Name { get; set; }
 
-    
-     
+   
 
         public string? Url { get; set; }
 
@@ -29,11 +28,11 @@ namespace Jewelry_Web_Api.Data.Models
 
         public double? Size { get; set; }
 
-        
+       
 
         public string? Type { get; set; }
 
-        public bool IsDeleted { get; set; }
+   
 
 
     }
