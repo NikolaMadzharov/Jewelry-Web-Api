@@ -11,7 +11,7 @@ namespace Jewelry_Web_Api.Contracts
 
         Task DeleteAsyc(int id);
 
-        Task<Ring> UpdateProductAsync(Ring product);
+        Task<Ring> UpdateProductAsync(Ring product, int ringId);
 
          Task<Ring> AddAsync(Ring product);  
 

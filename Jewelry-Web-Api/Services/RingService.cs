@@ -65,14 +65,29 @@ namespace Jewelry_Web_Api.Services
             return ring;
         }
 
-        public async Task<Ring> UpdateProductAsync(Ring product)
+        public async Task<Ring> UpdateProductAsync(Ring product, int ringId)
         {
-            var ring =  await this.webApiContext.Rings.FirstOrDefaultAsync(x => x.Id == product.Id);
+            var ring = await this.webApiContext.Rings.FirstOrDefaultAsync(x => x.Id == ringId);
 
 
-              this.webApiContext.Entry(ring).State = EntityState.Modified;
-            await this.webApiContext.SaveChangesAsync();
+            if (ring == null)
+            {
 
+                throw new NullReferenceException("Employee not found!");
+
+            }
+
+            if (ring != null)
+            {
+                ring.Type = product.Type;
+                ring.Size = product.Size;
+                ring.Price = product.Price;
+                ring.Description = product.Description;
+                ring.Name = product.Name;
+                ring.Url = product.Url;
+
+                await this.webApiContext.SaveChangesAsync();
+            }
 
 
 

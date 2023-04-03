@@ -51,10 +51,10 @@ namespace Jewelry_Web_Api.Controllers
             return ring == null ? NotFound() : Ok(ring);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> UpdateRing(Ring ring)
+        [HttpPost("UpdateRing")]
+        public async Task<IActionResult> UpdateRing(Ring ring, int ringId)
         {
-           await this.ringService.UpdateProductAsync(ring);
+            await this.ringService.UpdateProductAsync(ring, ringId);
 
             return Ok(ring);
         }
