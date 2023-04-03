@@ -12,5 +12,6 @@ This API will be used in my react project [Jewelry Ecommerce](https://github.com
 ### :pushpin: Ring:
 ![Screenshot_20230306_010608](https://user-images.githubusercontent.com/89745007/223094661-5f6640a6-5ac5-4fb1-8907-6efa784fbf24.png)
 
-### :pushpin: Braceltes:
-Still working on
+### :pushpin: Account:
+![image](https://user-images.githubusercontent.com/89745007/229611625-386eef4c-b295-41c4-af99-36fada577879.png)
+
