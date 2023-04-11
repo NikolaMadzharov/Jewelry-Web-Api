@@ -10,7 +10,8 @@ This API will be used in my react project [Jewelry Ecommerce](https://github.com
 ## :loudspeaker: Api functions
 
 ### :pushpin: Ring:
-![image](https://user-images.githubusercontent.com/89745007/231189874-609e1e9c-3ab4-480a-9154-46a0c137540d.png)
+![image](https://user-images.githubusercontent.com/89745007/231190037-918fb27a-d446-4d56-825e-753d80b2549c.png)
+
 
 
 ### :pushpin: Account:
